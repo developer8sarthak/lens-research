@@ -4,6 +4,7 @@ from pathlib import Path
 from core.registry import COLLECTORS
 from core.workspace import create_workspace, save_json
 from core.collector_manager import run_collectors
+from core.report_generator import generate_reports
 
 def print_progress(iteration, total, prefix='', length=30):
     """Prints a cozy and minimal progress bar."""
@@ -89,6 +90,13 @@ def main():
     for c in metadata["collectors"]:
         res = f" ({c.get('results_count', 0)} results)" if "results_count" in c else ""
         print(f" - {c['name']}: {c['status']}{res}")
+    
+    print("\n[*] Generating reports...")
+    report_paths = generate_reports(workspace)
+    if report_paths:
+        print(f"[*] Reports saved in: {workspace['base']}/reports/")
+        for path in report_paths:
+            print(f" - {path.name}")
     
     print("\n[*] Research run complete.")
 
