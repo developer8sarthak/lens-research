@@ -1,8 +1,19 @@
 import json
+import sys
 from pathlib import Path
 from core.registry import COLLECTORS
 from core.workspace import create_workspace, save_json
 from core.collector_manager import run_collectors
+
+def print_progress(iteration, total, prefix='', length=30):
+    """Prints a cozy and minimal progress bar."""
+    percent = int(100 * (iteration / total))
+    filled_length = int(length * iteration // total)
+    bar = '█' * filled_length + '░' * (length - filled_length)
+    sys.stdout.write(f'\r{prefix} {bar} {percent}% ({iteration}/{total})')
+    sys.stdout.flush()
+    if iteration == total:
+        sys.stdout.write('\n')
 
 def main():
     print("=== Research Agent Refactored ===")
@@ -16,9 +27,18 @@ def main():
     print(f"\n[*] Creating workspace for: {query}")
     workspace = create_workspace(query)
     
-    # 2. Execute collectors in parallel
-    print(f"[*] Executing {len(COLLECTORS)} collectors in parallel...")
-    execution_reports = run_collectors(COLLECTORS, query)
+    # 2. Execute collectors in parallel with animation
+    print(f"[*] Researching across {len(COLLECTORS)} sources...")
+    
+    execution_reports = []
+    total_collectors = len(COLLECTORS)
+    
+    # Initialize progress bar
+    print_progress(0, total_collectors, prefix='Progress:')
+    
+    for i, report in enumerate(run_collectors(COLLECTORS, query), 1):
+        execution_reports.append(report)
+        print_progress(i, total_collectors, prefix='Progress:')
     
     # 3. Save results and generate metadata
     success_count = 0
