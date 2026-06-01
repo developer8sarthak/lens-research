@@ -1,38 +1,23 @@
-import json
 from datetime import datetime
-from pathlib import Path
-
 import requests
 
-query = input("Enter your query: ")
+def collect(query: str) -> dict:
+    url = "https://api.crossref.org/works"
+    params = {"query": query, "rows": 25}
+    headers = {"User-Agent": "ResearchAgent/1.0"}
 
-url = "https://api.crossref.org/works"
-
-params = {"query": query, "rows": 25}
-
-headers = {"User-Agent": "ResearchAgent/1.0"}
-
-try:
     response = requests.get(url, params=params, headers=headers, timeout=30)
-
-    print("Status:", response.status_code)
-
-    if response.status_code != 200:
-        print(response.text)
-        exit()
+    response.raise_for_status()
 
     raw_data = response.json()
-
     papers = []
 
     for item in raw_data.get("message", {}).get("items", []):
         authors = []
-
         for author in item.get("author", []):
             full_name = (
                 author.get("given", "") + " " + author.get("family", "")
             ).strip()
-
             if full_name:
                 authors.append(full_name)
 
@@ -54,21 +39,10 @@ try:
             }
         )
 
-    output = {
+    return {
         "query": query,
         "source": "crossref",
         "collected_at": datetime.now().isoformat(),
         "total_results": len(papers),
         "results": papers,
     }
-
-    Path("workspace").mkdir(exist_ok=True)
-
-    with open("workspace/crossref.json", "w", encoding="utf-8") as file:
-        json.dump(output, file, indent=4, ensure_ascii=False)
-
-    print(f"\nCollected {len(papers)} papers")
-    print("Saved to workspace/crossref.json")
-
-except Exception as e:
-    print("Error:", e)

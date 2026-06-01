@@ -1,31 +1,19 @@
-import json
 from datetime import datetime
-from pathlib import Path
-
 import requests
 
-query = input("Enter your query: ")
+def collect(query: str) -> dict:
+    url = "https://api.github.com/search/repositories"
+    headers = {"Accept": "application/vnd.github+json", "User-Agent": "ResearchAgent"}
 
-url = "https://api.github.com/search/repositories"
-
-headers = {"Accept": "application/vnd.github+json", "User-Agent": "ResearchAgent"}
-
-try:
     response = requests.get(
         url,
         params={"q": query, "sort": "stars", "order": "desc", "per_page": 25},
         headers=headers,
         timeout=30,
     )
-
-    print("Status:", response.status_code)
-
-    if response.status_code != 200:
-        print(response.text)
-        exit()
+    response.raise_for_status()
 
     raw_data = response.json()
-
     repositories = []
 
     for repo in raw_data.get("items", []):
@@ -47,21 +35,10 @@ try:
             }
         )
 
-    output = {
+    return {
         "query": query,
         "source": "github",
         "collected_at": datetime.now().isoformat(),
         "total_results": len(repositories),
         "results": repositories,
     }
-
-    Path("workspace").mkdir(exist_ok=True)
-
-    with open("workspace/github.json", "w", encoding="utf-8") as file:
-        json.dump(output, file, indent=4, ensure_ascii=False)
-
-    print(f"\nCollected {len(repositories)} repositories")
-    print("Saved to workspace/github.json")
-
-except Exception as e:
-    print("Error:", e)

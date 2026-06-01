@@ -1,0 +1,594 @@
+{
+    "query": "Quantum computing 2026",
+    "source": "openalex",
+    "collected_at": "2026-06-01T21:36:11.087778",
+    "total_results": 25,
+    "results": [
+        {
+            "title": "Forecasting timelines of quantum computing",
+            "publication_year": 2020,
+            "cited_by_count": 24,
+            "authors": [
+                "Jaime Sevilla",
+                "Christian Riedel"
+            ],
+            "institutions": [
+                "University of Aberdeen"
+            ],
+            "doi": "https://doi.org/10.48550/arxiv.2009.05045",
+            "openalex_id": "https://openalex.org/W3085453714",
+            "type": "preprint",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://arxiv.org/pdf/2009.05045"
+        },
+        {
+            "title": "Cancer nanomedicine: progress, challenges and opportunities",
+            "publication_year": 2016,
+            "cited_by_count": 5583,
+            "authors": [
+                "Jinjun Shi",
+                "Philip W. Kantoff",
+                "Richard Wooster",
+                "Omid C. Farokhzad"
+            ],
+            "institutions": [
+                "Brigham and Women's Hospital",
+                "Harvard University",
+                "Memorial Sloan Kettering Cancer Center",
+                "King Abdulaziz University"
+            ],
+            "doi": "https://doi.org/10.1038/nrc.2016.108",
+            "openalex_id": "https://openalex.org/W2554773181",
+            "type": "review",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://www.nature.com/articles/nrc.2016.108.pdf"
+        },
+        {
+            "title": "Coherent emission of light by thermal sources",
+            "publication_year": 2002,
+            "cited_by_count": 1441,
+            "authors": [
+                "Jean‐Jacques Greffet",
+                "Rémi Carminati",
+                "Karl Joulain",
+                "Jean‐Philippe Mulet",
+                "S. Mainguy",
+                "Yong Chen"
+            ],
+            "institutions": [
+                "Centre National de la Recherche Scientifique",
+                "University of Rochester",
+                "Laboratoire d'Énergétique Moléculaire et Macroscopique, Combustion",
+                "CEA CESTA",
+                "Commissariat à l'Énergie Atomique et aux Énergies Alternatives",
+                "Laboratoire d'Étude des Microstructures"
+            ],
+            "doi": "https://doi.org/10.1038/416061a",
+            "openalex_id": "https://openalex.org/W2037137799",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://www.photoniques.com/articles/photon/pdf/2026/02/photon2026137p30.pdf"
+        },
+        {
+            "title": "ff19SB: Amino-Acid-Specific Protein Backbone Parameters Trained against Quantum Mechanics Energy Surfaces in Solution",
+            "publication_year": 2019,
+            "cited_by_count": 2302,
+            "authors": [
+                "Chuan Tian",
+                "Koushik Kasavajhala",
+                "Kellon Belfon",
+                "Lauren Raguette",
+                "He Huang",
+                "Angela N. Migues",
+                "John D. Bickel",
+                "Yuzhang Wang",
+                "Jorge Pincay",
+                "Qin Wu",
+                "Carlos Simmerling"
+            ],
+            "institutions": [
+                "Stony Brook University",
+                "Brookhaven National Laboratory"
+            ],
+            "doi": "https://doi.org/10.1021/acs.jctc.9b00591",
+            "openalex_id": "https://openalex.org/W2989052455",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://www.osti.gov/servlets/purl/1574918"
+        },
+        {
+            "title": "On Global Electricity Usage of Communication Technology: Trends to 2030",
+            "publication_year": 2015,
+            "cited_by_count": 1262,
+            "authors": [
+                "Anders Andrae",
+                "Tomas Edler"
+            ],
+            "institutions": [
+                "Huawei Technologies (Sweden)"
+            ],
+            "doi": "https://doi.org/10.3390/challe6010117",
+            "openalex_id": "https://openalex.org/W2075863084",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://www.mdpi.com/2078-1547/6/1/117/pdf?version=1432196917"
+        },
+        {
+            "title": "The Road Towards 6G: A Comprehensive Survey",
+            "publication_year": 2021,
+            "cited_by_count": 1473,
+            "authors": [
+                "Wei Jiang",
+                "Bin Han",
+                "Mohammad Asif Habibi",
+                "Hans Dieter Schotten"
+            ],
+            "institutions": [
+                "German Research Centre for Artificial Intelligence",
+                "University of Kaiserslautern"
+            ],
+            "doi": "https://doi.org/10.1109/ojcoms.2021.3057679",
+            "openalex_id": "https://openalex.org/W3126686235",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://ieeexplore.ieee.org/ielx7/8782661/9309127/09349624.pdf"
+        },
+        {
+            "title": "6G and Beyond: The Future of Wireless Communications Systems",
+            "publication_year": 2020,
+            "cited_by_count": 1331,
+            "authors": [
+                "Ian F. Akyildiz",
+                "A.C. Kak",
+                "Shuai Nie"
+            ],
+            "institutions": [
+                "Georgia Institute of Technology"
+            ],
+            "doi": "https://doi.org/10.1109/access.2020.3010896",
+            "openalex_id": "https://openalex.org/W3045086480",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/8948470/09145564.pdf"
+        },
+        {
+            "title": "Searching for the Nano-Hertz Stochastic Gravitational Wave Background with the Chinese Pulsar Timing Array Data Release I",
+            "publication_year": 2023,
+            "cited_by_count": 1100,
+            "authors": [
+                "Heng Xu",
+                "Siyuan Chen",
+                "Yanjun Guo",
+                "Jinchen Jiang",
+                "Bojun Wang",
+                "Jiangwei Xu",
+                "Zihan Xue",
+                "R. N. Caballero",
+                "J. P. Yuan",
+                "Yonghua Xu",
+                "Jingbo Wang",
+                "Longfei Hao",
+                "Jingtao Luo",
+                "Kejia Lee",
+                "J. L. Han",
+                "Peng Jiang",
+                "Zhiqiang Shen",
+                "Min Wang",
+                "Na Wang",
+                "Renxin Xu",
+                "Xiangping Wu",
+                "R. N. Manchester",
+                "Lei Qian",
+                "Xin Guan",
+                "Meng-Lin Huang",
+                "Chun Sun",
+                "Yan Zhu"
+            ],
+            "institutions": [
+                "National Astronomical Observatories",
+                "Peking University",
+                "Kavli Institute for Theoretical Sciences",
+                "Max Planck Institute for Radio Astronomy",
+                "Hellenic Open University",
+                "Chinese Academy of Sciences",
+                "Xinjiang Astronomical Observatory",
+                "Yunnan Observatories",
+                "Lishui University",
+                "National Time Service Center",
+                "Shanghai Astronomical Observatory",
+                "State Key Laboratory of Nuclear Physics and Technology",
+                "Commonwealth Scientific and Industrial Research Organisation",
+                "Australia Telescope National Facility"
+            ],
+            "doi": "https://doi.org/10.1088/1674-4527/acdfa5",
+            "openalex_id": "https://openalex.org/W4381162275",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://iopscience.iop.org/article/10.1088/1674-4527/acdfa5/pdf"
+        },
+        {
+            "title": "Survey on 6G Frontiers: Trends, Applications, Requirements, Technologies and Future Research",
+            "publication_year": 2021,
+            "cited_by_count": 761,
+            "authors": [
+                "Chamitha de Alwis",
+                "Anshuman Kalla",
+                "Quoc‐Viet Pham",
+                "Pardeep Kumar",
+                "Kapal Dev",
+                "Won‐Joo Hwang",
+                "Madhusanka Liyanage"
+            ],
+            "institutions": [
+                "University of Sri Jayewardenepura",
+                "University of Oulu",
+                "Pusan National University",
+                "Swansea University",
+                "Munster Technological University",
+                "University College Dublin"
+            ],
+            "doi": "https://doi.org/10.1109/ojcoms.2021.3071496",
+            "openalex_id": "https://openalex.org/W3144404977",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://ieeexplore.ieee.org/ielx7/8782661/9309127/09397776.pdf"
+        },
+        {
+            "title": "Quantum Computing Strategy 2026",
+            "publication_year": 2025,
+            "cited_by_count": 0,
+            "authors": [
+                "USDOE National Nuclear Security Administration (NNSA), Office of Defense Programs (DP)",
+                "Simon David Hammond",
+                "Michael Lang",
+                "David F. Richards",
+                "Carleton Coffrin",
+                "Stephan Eidenbenz",
+                "Robert B. Lowrie",
+                "Andrew Sornborger",
+                "Sven P. Rudin",
+                "Kristin M. Beck",
+                "Jonathan L. DuBois",
+                "Frank Graziani",
+                "Yaniv Rosen",
+                "Kyle Wendt",
+                "Andrew Baczewski",
+                "Michael R. Descour",
+                "Tzvetan S. Metodi"
+            ],
+            "institutions": [
+                "National Nuclear Security Administration",
+                "Lawrence Livermore National Laboratory",
+                "Los Alamos National Laboratory",
+                "Sandia National Laboratories",
+                "Sandia National Laboratories California"
+            ],
+            "doi": "https://doi.org/10.2172/3000356",
+            "openalex_id": "https://openalex.org/W4415684551",
+            "type": "report",
+            "language": null,
+            "open_access": false,
+            "pdf_url": null
+        },
+        {
+            "title": "Quantum-Enhanced In-Context Learning for Geopotential Field Estimation: A Theoretical Framework",
+            "publication_year": 2026,
+            "cited_by_count": 7,
+            "authors": [
+                "M. Hawarey"
+            ],
+            "institutions": [],
+            "doi": "https://doi.org/10.65737/airmcs2026322",
+            "openalex_id": "https://openalex.org/W7131442932",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://doi.org/10.65737/airmcs2026322"
+        },
+        {
+            "title": "Reskilling and Upskilling the Future-ready Workforce for Industry 4.0 and Beyond",
+            "publication_year": 2022,
+            "cited_by_count": 655,
+            "authors": [
+                "Ling Li"
+            ],
+            "institutions": [
+                "Old Dominion University"
+            ],
+            "doi": "https://doi.org/10.1007/s10796-022-10308-y",
+            "openalex_id": "https://openalex.org/W4285086367",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10796-022-10308-y.pdf"
+        },
+        {
+            "title": "Quantum computing in India: Recent developments and future",
+            "publication_year": 2023,
+            "cited_by_count": 4,
+            "authors": [
+                "Varun G. Menon",
+                "Mainak Adhikari"
+            ],
+            "institutions": [
+                "General Hospital Ernakulam",
+                "Indian Institute of Information Technology Allahabad",
+                "Indian Institute of Management Lucknow"
+            ],
+            "doi": "https://doi.org/10.1049/qtc2.12056",
+            "openalex_id": "https://openalex.org/W4328122555",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1049/qtc2.12056"
+        },
+        {
+            "title": "Quantum entanglement in photosynthetic light-harvesting complexes",
+            "publication_year": 2010,
+            "cited_by_count": 651,
+            "authors": [
+                "Mohan Sarovar",
+                "Akihito Ishizaki",
+                "Graham R. Fleming",
+                "K. Birgitta Whaley"
+            ],
+            "institutions": [
+                "University of California, Berkeley",
+                "Berkeley College",
+                "Lawrence Berkeley National Laboratory"
+            ],
+            "doi": "https://doi.org/10.1038/nphys1652",
+            "openalex_id": "https://openalex.org/W2095668864",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://arxiv.org/pdf/0905.3787"
+        },
+        {
+            "title": "Prospects for observing and localizing gravitational-wave transients with Advanced LIGO, Advanced Virgo and KAGRA",
+            "publication_year": 2020,
+            "cited_by_count": 1002,
+            "authors": [
+                "Shubhanshu Tiwari",
+                "R. Abbott",
+                "T. D. Abbott",
+                "S. Abraham"
+            ],
+            "institutions": [
+                "California Institute of Technology",
+                "Louisiana State University",
+                "Inter-University Centre for Astronomy and Astrophysics"
+            ],
+            "doi": "https://doi.org/10.5167/uzh-191285",
+            "openalex_id": "https://openalex.org/W2975828310",
+            "type": "review",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "http://www.scopus.com/inward/record.url?scp=85091656606&partnerID=8YFLogxK"
+        },
+        {
+            "title": "Brain-inspired computing needs a master plan",
+            "publication_year": 2022,
+            "cited_by_count": 590,
+            "authors": [
+                "Adnan Mehonić",
+                "Anthony J. Kenyon"
+            ],
+            "institutions": [
+                "University College Lahore",
+                "University College London",
+                "The London College"
+            ],
+            "doi": "https://doi.org/10.1038/s41586-021-04362-w",
+            "openalex_id": "https://openalex.org/W4223904523",
+            "type": "review",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://www.nature.com/articles/s41586-021-04362-w.pdf"
+        },
+        {
+            "title": "Topological Integers Without Physics: Holonomic Closure in DNA",
+            "publication_year": 2026,
+            "cited_by_count": 5,
+            "authors": [
+                "Broock"
+            ],
+            "institutions": [],
+            "doi": "https://doi.org/10.5281/zenodo.18463713",
+            "openalex_id": "https://openalex.org/W7127362036",
+            "type": "preprint",
+            "language": null,
+            "open_access": true,
+            "pdf_url": null
+        },
+        {
+            "title": "Selecting Cryptographic Key Sizes",
+            "publication_year": 2001,
+            "cited_by_count": 788,
+            "authors": [
+                "Arjen K. Lenstra",
+                "Eric R. Verheul"
+            ],
+            "institutions": [
+                "Citigroup",
+                "PricewaterhouseCoopers (Netherlands)"
+            ],
+            "doi": "https://doi.org/10.1007/s00145-001-0009-4",
+            "openalex_id": "https://openalex.org/W2286477783",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00145-001-0009-4.pdf"
+        },
+        {
+            "title": "Google Scholar, Microsoft Academic, Scopus, Dimensions, Web of Science, and OpenCitations’ COCI: a multidisciplinary comparison of coverage via citations",
+            "publication_year": 2020,
+            "cited_by_count": 911,
+            "authors": [
+                "Alberto Martín-Martín",
+                "Mike Thelwall",
+                "Enrique Orduna-Malea",
+                "Emilio Delgado López-Cózar"
+            ],
+            "institutions": [
+                "Universidad de Granada",
+                "University of Wolverhampton",
+                "Universitat Politècnica de València"
+            ],
+            "doi": "https://doi.org/10.1007/s11192-020-03690-4",
+            "openalex_id": "https://openalex.org/W3023758415",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11192-020-03690-4.pdf"
+        },
+        {
+            "title": "Physical Unclonable Functions and Applications: A Tutorial",
+            "publication_year": 2014,
+            "cited_by_count": 1295,
+            "authors": [
+                "Charles Herder",
+                "Meng-Day Yu",
+                "Farinaz Koushanfar",
+                "Srinivas Devadas"
+            ],
+            "institutions": [
+                "Massachusetts Institute of Technology",
+                "KU Leuven",
+                "Embedded Systems (United States)",
+                "Rice University"
+            ],
+            "doi": "https://doi.org/10.1109/jproc.2014.2320516",
+            "openalex_id": "https://openalex.org/W2088455835",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://ieeexplore.ieee.org/ielx7/5/6860340/06823677.pdf"
+        },
+        {
+            "title": "Optimization of parameters for semiempirical methods VI: more modifications to the NDDO approximations and re-optimization of parameters",
+            "publication_year": 2012,
+            "cited_by_count": 2033,
+            "authors": [
+                "James J. P. Stewart"
+            ],
+            "institutions": [
+                "University of Colorado Colorado Springs",
+                "Yashwantrao Chavan Maharashtra Open University"
+            ],
+            "doi": "https://doi.org/10.1007/s00894-012-1667-x",
+            "openalex_id": "https://openalex.org/W2032084435",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00894-012-1667-x.pdf"
+        },
+        {
+            "title": "Quantum Monte Carlo methods for nuclear physics",
+            "publication_year": 2015,
+            "cited_by_count": 805,
+            "authors": [
+                "J. Carlson",
+                "Stefano Gandolfi",
+                "Francesco Pederiva",
+                "Steven C. Pieper",
+                "R. Schiavilla",
+                "K. E. Schmidt",
+                "R. B. Wiringa"
+            ],
+            "institutions": [
+                "Los Alamos National Laboratory"
+            ],
+            "doi": "https://doi.org/10.1103/revmodphys.87.1067",
+            "openalex_id": "https://openalex.org/W2149739919",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://arxiv.org/pdf/1412.3081"
+        },
+        {
+            "title": "Newton‐<scp>X</scp>: a surface‐hopping program for nonadiabatic molecular dynamics",
+            "publication_year": 2013,
+            "cited_by_count": 499,
+            "authors": [
+                "Mario Barbatti",
+                "Matthias Ruckenbauer",
+                "Felix Plasser",
+                "Jiřı́ Pittner",
+                "Giovanni Granucci",
+                "Maurizio Persico",
+                "Hans Lischka"
+            ],
+            "institutions": [
+                "Max-Planck-Institut für Kohlenforschung",
+                "Goethe University Frankfurt",
+                "University of Vienna",
+                "Czech Academy of Sciences, J. Heyrovský Institute of Physical Chemistry",
+                "University of Pisa",
+                "Texas Tech University"
+            ],
+            "doi": "https://doi.org/10.1002/wcms.1158",
+            "openalex_id": "https://openalex.org/W1506967528",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/wcms.1158"
+        },
+        {
+            "title": "QuantumCLEF 2026 The Third Edition of the Quantum Computing Lab at CLEF",
+            "publication_year": 2026,
+            "cited_by_count": 0,
+            "authors": [
+                "Andrea Pasin",
+                "Maurizio Ferrari Dacrema",
+                "Paolo Cremonesi",
+                "Washington Cunha",
+                "M. A. M. Simões Gonçalves",
+                "Nicola Ferro"
+            ],
+            "institutions": [
+                "University of Padua",
+                "Politecnico di Milano",
+                "Universidade Federal de Minas Gerais"
+            ],
+            "doi": "https://doi.org/10.1007/978-3-032-21321-1_41",
+            "openalex_id": "https://openalex.org/W7140089163",
+            "type": "book-chapter",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "https://hdl.handle.net/11311/1313306"
+        },
+        {
+            "title": "Numerical simulations of acoustically generated gravitational waves at a first order phase transition",
+            "publication_year": 2015,
+            "cited_by_count": 551,
+            "authors": [
+                "Mark Hindmarsh",
+                "Stephan J. Huber",
+                "Kari Rummukainen",
+                "David Weir"
+            ],
+            "institutions": [
+                "Helsinki Institute of Physics",
+                "University of Sussex",
+                "University of Helsinki",
+                "University of Stavanger"
+            ],
+            "doi": "https://doi.org/10.1103/physrevd.92.123009",
+            "openalex_id": "https://openalex.org/W2100403599",
+            "type": "article",
+            "language": "en",
+            "open_access": true,
+            "pdf_url": "http://link.aps.org/pdf/10.1103/PhysRevD.92.123009"
+        }
+    ]
+}

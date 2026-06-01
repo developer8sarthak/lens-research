@@ -1,0 +1,339 @@
+{
+    "query": "Quantum computing 2026",
+    "source": "crossref",
+    "collected_at": "2026-06-01T21:36:46.940202",
+    "total_results": 25,
+    "results": [
+        {
+            "title": "Quantum computing models",
+            "doi": "10.1016/b978-0-44-327704-7.00010-4",
+            "publisher": "Elsevier",
+            "type": "book-chapter",
+            "authors": [
+                "Daowen Qiu"
+            ],
+            "citation_count": 0,
+            "journal": "Theoretical Foundations of Quantum Computing",
+            "published": "2025-08-29T07:52:13Z",
+            "url": "https://doi.org/10.1016/b978-0-44-327704-7.00010-4"
+        },
+        {
+            "title": "Fundamental concepts of quantum computing",
+            "doi": "10.1016/b978-0-44-327704-7.00007-4",
+            "publisher": "Elsevier",
+            "type": "book-chapter",
+            "authors": [
+                "Daowen Qiu"
+            ],
+            "citation_count": 0,
+            "journal": "Theoretical Foundations of Quantum Computing",
+            "published": "2025-08-29T07:52:13Z",
+            "url": "https://doi.org/10.1016/b978-0-44-327704-7.00007-4"
+        },
+        {
+            "title": "Quantum Computing Architectures",
+            "doi": "10.1007/978-3-032-09303-5_2",
+            "publisher": "Springer Nature Switzerland",
+            "type": "book-chapter",
+            "authors": [
+                "Hansika Weerasena",
+                "Prabhat Mishra"
+            ],
+            "citation_count": 0,
+            "journal": "Design Automation for Quantum Computing",
+            "published": "2026-04-05T00:21:44Z",
+            "url": "https://doi.org/10.1007/978-3-032-09303-5_2"
+        },
+        {
+            "title": "Introduction to quantum computing",
+            "doi": "10.1016/b978-0-443-34193-9.01002-4",
+            "publisher": "Elsevier",
+            "type": "book-chapter",
+            "authors": [
+                "H. David Sheets",
+                "Michael Dupin"
+            ],
+            "citation_count": 0,
+            "journal": "Quantum Computing in Medicine",
+            "published": "2026-02-06T09:32:55Z",
+            "url": "https://doi.org/10.1016/b978-0-443-34193-9.01002-4"
+        },
+        {
+            "title": "Design Automation Challenges in Quantum Computing",
+            "doi": "10.1007/978-3-032-09303-5_1",
+            "publisher": "Springer Nature Switzerland",
+            "type": "book-chapter",
+            "authors": [
+                "Prabhat Mishra"
+            ],
+            "citation_count": 0,
+            "journal": "Design Automation for Quantum Computing",
+            "published": "2026-04-05T00:21:13Z",
+            "url": "https://doi.org/10.1007/978-3-032-09303-5_1"
+        },
+        {
+            "title": "Quantum computing solutions for protein folding",
+            "doi": "10.1016/b978-0-443-34193-9.00004-1",
+            "publisher": "Elsevier",
+            "type": "book-chapter",
+            "authors": [
+                "Don Roosan",
+                "Rubayat Khan"
+            ],
+            "citation_count": 0,
+            "journal": "Quantum Computing in Medicine",
+            "published": "2026-02-06T09:32:55Z",
+            "url": "https://doi.org/10.1016/b978-0-443-34193-9.00004-1"
+        },
+        {
+            "title": "Quantum Computing in Medicine",
+            "doi": "10.1016/c2024-0-01709-2",
+            "publisher": "Elsevier",
+            "type": "edited-book",
+            "authors": [],
+            "citation_count": 0,
+            "journal": "",
+            "published": "2026-02-06T09:33:03Z",
+            "url": "https://doi.org/10.1016/c2024-0-01709-2"
+        },
+        {
+            "title": "Quantum Computing",
+            "doi": "10.1007/978-3-032-06770-8_2",
+            "publisher": "Springer Nature Switzerland",
+            "type": "book-chapter",
+            "authors": [
+                "Lukas Burgholzer",
+                "Robert Wille"
+            ],
+            "citation_count": 0,
+            "journal": "Design Automation Tools and Software for Quantum Computing",
+            "published": "2026-05-10T22:23:31Z",
+            "url": "https://doi.org/10.1007/978-3-032-06770-8_2"
+        },
+        {
+            "title": "State Preparation for Quantum Computing",
+            "doi": "10.1007/978-3-032-09303-5_3",
+            "publisher": "Springer Nature Switzerland",
+            "type": "book-chapter",
+            "authors": [
+                "Sahan Sanjaya",
+                "Prabhat Mishra"
+            ],
+            "citation_count": 0,
+            "journal": "Design Automation for Quantum Computing",
+            "published": "2026-04-05T00:22:27Z",
+            "url": "https://doi.org/10.1007/978-3-032-09303-5_3"
+        },
+        {
+            "title": "The Future of Fault-Tolerant Quantum Computing",
+            "doi": "10.1007/978-3-032-09303-5_15",
+            "publisher": "Springer Nature Switzerland",
+            "type": "book-chapter",
+            "authors": [
+                "Prabhat Mishra"
+            ],
+            "citation_count": 0,
+            "journal": "Design Automation for Quantum Computing",
+            "published": "2026-04-05T00:22:31Z",
+            "url": "https://doi.org/10.1007/978-3-032-09303-5_15"
+        },
+        {
+            "title": "Development history and potential applications of quantum computing",
+            "doi": "10.1016/b978-0-44-327704-7.00006-2",
+            "publisher": "Elsevier",
+            "type": "book-chapter",
+            "authors": [
+                "Daowen Qiu"
+            ],
+            "citation_count": 0,
+            "journal": "Theoretical Foundations of Quantum Computing",
+            "published": "2025-08-29T07:52:13Z",
+            "url": "https://doi.org/10.1016/b978-0-44-327704-7.00006-2"
+        },
+        {
+            "title": "Quantum Computing Fundamentals: Beyond Classical Bits",
+            "doi": "10.1007/978-3-032-10775-6_1",
+            "publisher": "Springer Nature Switzerland",
+            "type": "book-chapter",
+            "authors": [
+                "Swati Karni",
+                "Arun Kumar Rajamandrapu"
+            ],
+            "citation_count": 0,
+            "journal": "Quantum Ops",
+            "published": "2026-01-02T03:11:24Z",
+            "url": "https://doi.org/10.1007/978-3-032-10775-6_1"
+        },
+        {
+            "title": "Cloud Quantum Computing",
+            "doi": "10.1007/978-3-032-03650-6_10",
+            "publisher": "Springer Nature Switzerland",
+            "type": "book-chapter",
+            "authors": [
+                "Marcus Stephen Edwards"
+            ],
+            "citation_count": 0,
+            "journal": "An Introduction to Quantum Computing for Computer Engineers",
+            "published": "2026-01-25T16:13:44Z",
+            "url": "https://doi.org/10.1007/978-3-032-03650-6_10"
+        },
+        {
+            "title": "Advances in mixed reality in quantum computing",
+            "doi": "10.1016/b978-0-443-34193-9.00009-0",
+            "publisher": "Elsevier",
+            "type": "book-chapter",
+            "authors": [
+                "Tiffany Khou",
+                "Don Roosan"
+            ],
+            "citation_count": 0,
+            "journal": "Quantum Computing in Medicine",
+            "published": "2026-02-06T09:32:55Z",
+            "url": "https://doi.org/10.1016/b978-0-443-34193-9.00009-0"
+        },
+        {
+            "title": "1396 Quantum computing and quantum algorithms",
+            "doi": "10.1515/9783112224434-006",
+            "publisher": "De Gruyter",
+            "type": "book-chapter",
+            "authors": [],
+            "citation_count": 0,
+            "journal": "Quantum Technologies for Engineers",
+            "published": "2026-05-29T21:34:20Z",
+            "url": "https://doi.org/10.1515/9783112224434-006"
+        },
+        {
+            "title": "The convergence of quantum computing and machine learning",
+            "doi": "10.1016/b978-0-443-34193-9.00012-0",
+            "publisher": "Elsevier",
+            "type": "book-chapter",
+            "authors": [
+                "Tiffany Khou",
+                "Christopher Stuetzle"
+            ],
+            "citation_count": 0,
+            "journal": "Quantum Computing in Medicine",
+            "published": "2026-02-06T09:32:55Z",
+            "url": "https://doi.org/10.1016/b978-0-443-34193-9.00012-0"
+        },
+        {
+            "title": "Verification Paradigms for Quantum Computing",
+            "doi": "10.1007/978-3-032-09303-5_7",
+            "publisher": "Springer Nature Switzerland",
+            "type": "book-chapter",
+            "authors": [
+                "Navnil Choudhury",
+                "Ameya Bhave",
+                "Kanad Basu"
+            ],
+            "citation_count": 0,
+            "journal": "Design Automation for Quantum Computing",
+            "published": "2026-04-05T00:22:01Z",
+            "url": "https://doi.org/10.1007/978-3-032-09303-5_7"
+        },
+        {
+            "title": "Quantum Computing in the Lab",
+            "doi": "10.1007/978-3-032-03650-6_3",
+            "publisher": "Springer Nature Switzerland",
+            "type": "book-chapter",
+            "authors": [
+                "Marcus Stephen Edwards"
+            ],
+            "citation_count": 0,
+            "journal": "An Introduction to Quantum Computing for Computer Engineers",
+            "published": "2026-01-25T16:13:47Z",
+            "url": "https://doi.org/10.1007/978-3-032-03650-6_3"
+        },
+        {
+            "title": "Quantum Technologies for Engineers",
+            "doi": "10.1515/9783112224434",
+            "publisher": "De Gruyter",
+            "type": "edited-book",
+            "authors": [
+                "Rainer Müller",
+                "Franziska Greinert"
+            ],
+            "citation_count": 0,
+            "journal": "",
+            "published": "2026-05-29T21:34:20Z",
+            "url": "https://doi.org/10.1515/9783112224434"
+        },
+        {
+            "title": "Theoretical Foundations of Quantum Computing",
+            "doi": "10.1016/c2024-0-03416-9",
+            "publisher": "Elsevier",
+            "type": "edited-book",
+            "authors": [],
+            "citation_count": 0,
+            "journal": "",
+            "published": "2025-08-29T07:52:14Z",
+            "url": "https://doi.org/10.1016/c2024-0-03416-9"
+        },
+        {
+            "title": "Quantum algorithms",
+            "doi": "10.1016/b978-0-44-327704-7.00011-6",
+            "publisher": "Elsevier",
+            "type": "book-chapter",
+            "authors": [
+                "Daowen Qiu"
+            ],
+            "citation_count": 0,
+            "journal": "Theoretical Foundations of Quantum Computing",
+            "published": "2025-08-29T07:52:13Z",
+            "url": "https://doi.org/10.1016/b978-0-44-327704-7.00011-6"
+        },
+        {
+            "title": "Quantum computing",
+            "doi": "10.1016/b978-0-44-315707-3.00015-3",
+            "publisher": "Elsevier",
+            "type": "book-chapter",
+            "authors": [
+                "Stefan Tappertzhofen",
+                "Jack Alexander-Webber"
+            ],
+            "citation_count": 0,
+            "journal": "Quantum Technology",
+            "published": "2025-10-17T11:51:59Z",
+            "url": "https://doi.org/10.1016/b978-0-44-315707-3.00015-3"
+        },
+        {
+            "title": "Quantum Computing as a Paradigm Shift in Mechanical and Allied Engineering",
+            "doi": "10.1007/978-3-032-10775-6_11",
+            "publisher": "Springer Nature Switzerland",
+            "type": "book-chapter",
+            "authors": [
+                "Vipul Kumar Sharma"
+            ],
+            "citation_count": 0,
+            "journal": "Quantum Ops",
+            "published": "2026-01-02T03:05:43Z",
+            "url": "https://doi.org/10.1007/978-3-032-10775-6_11"
+        },
+        {
+            "title": "From Computer Engineering to Quantum Computing",
+            "doi": "10.1007/978-3-032-03650-6_1",
+            "publisher": "Springer Nature Switzerland",
+            "type": "book-chapter",
+            "authors": [
+                "Marcus Stephen Edwards"
+            ],
+            "citation_count": 0,
+            "journal": "An Introduction to Quantum Computing for Computer Engineers",
+            "published": "2026-01-25T16:13:44Z",
+            "url": "https://doi.org/10.1007/978-3-032-03650-6_1"
+        },
+        {
+            "title": "Quantum computational complexity",
+            "doi": "10.1016/b978-0-44-327704-7.00012-8",
+            "publisher": "Elsevier",
+            "type": "book-chapter",
+            "authors": [
+                "Daowen Qiu"
+            ],
+            "citation_count": 0,
+            "journal": "Theoretical Foundations of Quantum Computing",
+            "published": "2025-08-29T07:52:13Z",
+            "url": "https://doi.org/10.1016/b978-0-44-327704-7.00012-8"
+        }
+    ]
+}

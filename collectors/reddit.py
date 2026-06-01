@@ -1,38 +1,24 @@
-import json
 from datetime import datetime
-from pathlib import Path
-
 import requests
 
-query = input("Enter your query: ")
+def collect(query: str) -> dict:
+    url = "https://www.reddit.com/search.json"
+    headers = {"User-Agent": "Mozilla/5.0"}
 
-url = "https://www.reddit.com/search.json"
-
-headers = {"User-Agent": "Mozilla/5.0"}
-
-try:
     response = requests.get(
         url,
         params={"q": query, "limit": 25, "sort": "relevance"},
         headers=headers,
         timeout=30,
     )
-
-    print("Status:", response.status_code)
-
-    if response.status_code != 200:
-        print(response.text[:1000])
-        exit()
+    response.raise_for_status()
 
     raw_data = response.json()
-
     cleaned_posts = []
-
-    posts = raw_data["data"]["children"]
+    posts = raw_data.get("data", {}).get("children", [])
 
     for item in posts:
-        post = item["data"]
-
+        post = item.get("data", {})
         cleaned_posts.append(
             {
                 "id": post.get("id"),
@@ -52,21 +38,10 @@ try:
             }
         )
 
-    output = {
+    return {
         "query": query,
         "source": "reddit",
         "collected_at": datetime.now().isoformat(),
         "total_posts": len(cleaned_posts),
         "results": cleaned_posts,
     }
-
-    Path("workspace").mkdir(exist_ok=True)
-
-    with open("workspace/reddit.json", "w", encoding="utf-8") as file:
-        json.dump(output, file, indent=4, ensure_ascii=False)
-
-    print(f"\nCollected {len(cleaned_posts)} posts")
-    print("Saved to workspace/reddit.json")
-
-except Exception as e:
-    print("Error:", e)
