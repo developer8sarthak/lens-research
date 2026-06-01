@@ -20,16 +20,15 @@ def generate_report_content(query: str, normalized_data: list) -> dict:
         source = item["source"]
         sections["source_stats"][source] = sections["source_stats"].get(source, 0) + 1
         
-        # Categorize by source type
-        academic_sources = ["arxiv", "crossref", "openalex", "semantic_scholar"]
-        repo_sources = ["github"]
-        web_sources = ["wikipedia", "reddit"]
+        # Categorize by processed category
+        category = item.get("category", "Other")
         
-        if source in academic_sources:
+        if category == "Academic Papers":
             sections["academic_papers"].append(item)
-        elif source in repo_sources:
+        elif category == "Repositories":
             sections["repositories"].append(item)
-        elif source in web_sources:
+        elif category in ["Knowledge Sources", "News", "Companies", "People"]:
+            # Grouping web-like results for the standard template sections
             sections["web_results"].append(item)
         else:
             sections["other"].append(item)

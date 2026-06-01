@@ -4,6 +4,7 @@ from pathlib import Path
 from core.report_parsers import parse_collector_data
 from core.report_templates import generate_report_content
 from core.report_exporters import export_txt, export_md, export_html
+from core.processor.processor import process_research_data
 
 def generate_reports(workspace_info: dict):
     """
@@ -32,8 +33,11 @@ def generate_reports(workspace_info: dict):
     if not all_normalized_data:
         return None
 
+    # 1.5 Process research data (Deduplicate, Rank, Categorize, Select)
+    processed_data = process_research_data(workspace_info["query"], all_normalized_data)
+
     # 2. Generate structured report content
-    report_content = generate_report_content(workspace_info["query"], all_normalized_data)
+    report_content = generate_report_content(workspace_info["query"], processed_data)
     
     # 3. Export to different formats
     outputs = {
