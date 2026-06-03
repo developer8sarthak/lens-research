@@ -3,12 +3,16 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "lens"
+name = "lensdev"
 version = "0.1.0"
 description = "Local AI-powered research agent"
 readme = "README.md"
-authors = [{name = "Developer", email = "dev@example.com"}]
 requires-python = ">=3.10"
+
+authors = [
+    { name = "Sarthak" }
+]
+
 dependencies = [
     "click",
     "requests",
@@ -16,8 +20,12 @@ dependencies = [
     "rich"
 ]
 
-[tool.setuptools]
-packages = ["lens"]
+[project.urls]
+Homepage = "https://lensdev.pages.dev"
+Repository = "https://github.com/<your-username>/<repo>"
 
 [project.scripts]
 lens = "lens.cli:main"
+
+[tool.setuptools]
+packages = ["lens"]
