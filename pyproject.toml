@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lensdev"
-version = "0.1.0"
+version = "0.1.1"
 description = "Local AI-powered research agent"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -21,8 +21,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://lensdev.pages.dev"
-Repository = "https://github.com/<your-username>/<repo>"
+Homepage = "https://github.com/developer8sarthak/lens-research"
+Repository = "https://github.com/developer8sarthak/lens-research"
+Issues = "https://github.com/developer8sarthak/lens-research/issues"
 
 [project.scripts]
 lens = "lens.cli:main"

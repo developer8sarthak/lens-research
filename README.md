@@ -4,7 +4,13 @@ Lens is a local AI-powered research agent designed to help developers and studen
 
 ## Installation
 
-To install Lens locally, navigate to the project directory and run:
+To install Lens for use:
+
+```bash
+pip install lensdev
+```
+
+For local development, navigate to the project directory and run:
 
 ```bash
 pip install -e .
