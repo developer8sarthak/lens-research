@@ -1,11 +1,13 @@
 from datetime import datetime
-import requests
+from lens.core.utils import get_with_retry
 
 def collect(query: str) -> dict:
     url = "https://www.reddit.com/search.json"
-    headers = {"User-Agent": "Mozilla/5.0"}
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
 
-    response = requests.get(
+    response = get_with_retry(
         url,
         params={"q": query, "limit": 25, "sort": "relevance"},
         headers=headers,

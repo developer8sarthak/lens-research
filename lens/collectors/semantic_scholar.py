@@ -1,5 +1,5 @@
 from datetime import datetime
-import requests
+from lens.core.utils import get_with_retry
 
 def collect(query: str) -> dict:
     url = "https://api.semanticscholar.org/graph/v1/paper/search"
@@ -8,8 +8,9 @@ def collect(query: str) -> dict:
         "limit": 25,
         "fields": "title,abstract,year,citationCount,influentialCitationCount,authors,fieldsOfStudy,url",
     }
+    headers = {"User-Agent": "Lens/1.0"}
 
-    response = requests.get(url, params=params, timeout=30)
+    response = get_with_retry(url, params=params, headers=headers, timeout=30)
     response.raise_for_status()
 
     raw_data = response.json()

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lens"
+version = "0.1.0"
+description = "Local AI-powered research agent"
+readme = "README.md"
+authors = [{name = "Developer", email = "dev@example.com"}]
+requires-python = ">=3.10"
+dependencies = [
+    "click",
+    "requests",
+    "beautifulsoup4",
+    "rich"
+]
+
+[tool.setuptools]
+packages = ["lens"]
+
+[project.scripts]
+lens = "lens.cli:main"

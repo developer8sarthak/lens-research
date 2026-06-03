@@ -1,7 +1,7 @@
-from core.processor.deduplicator import deduplicate
-from core.processor.ranker import rank_records
-from core.processor.categorizer import categorize_records
-from core.processor.selector import select_top_results
+from .deduplicator import deduplicate
+from .ranker import rank_records
+from .categorizer import categorize_records
+from .selector import select_top_results
 
 def process_research_data(query: str, records: list, limit_per_category: int = 10) -> list:
     """

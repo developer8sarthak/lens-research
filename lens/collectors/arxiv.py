@@ -1,12 +1,12 @@
 import xml.etree.ElementTree as ET
 from datetime import datetime
-import requests
+from lens.core.utils import get_with_retry
 
 def collect(query: str) -> dict:
-    url = "http://export.arxiv.org/api/query"
+    url = "https://export.arxiv.org/api/query"
     params = {"search_query": f"all:{query}", "start": 0, "max_results": 25}
 
-    response = requests.get(url, params=params, timeout=30)
+    response = get_with_retry(url, params=params, timeout=30)
     response.raise_for_status()
 
     root = ET.fromstring(response.text)

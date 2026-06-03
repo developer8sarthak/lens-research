@@ -1,10 +1,10 @@
 import json
 import os
 from pathlib import Path
-from core.report_parsers import parse_collector_data
-from core.report_templates import generate_report_content
-from core.report_exporters import export_txt, export_md, export_html
-from core.processor.processor import process_research_data
+from lens.core.report_parsers import parse_collector_data
+from lens.core.report_templates import generate_report_content
+from lens.core.report_exporters import export_txt, export_md, export_html
+from lens.core.processor.processor import process_research_data
 
 def generate_reports(workspace_info: dict):
     """
