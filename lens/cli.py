@@ -1,5 +1,6 @@
 import click
 import re
+from pathlib import Path
 from rich.console import Console
 from rich.theme import Theme
 from rich.table import Table
@@ -26,16 +27,73 @@ def print_header():
     console.print()
 
 @click.group()
-@click.version_option(version="0.1.1", prog_name="lens")
+@click.version_option(version="0.1.2", prog_name="lens")
 def main():
-    """Lens: Local AI-powered research agent."""
+    """Lens: Local AI research agent."""
     pass
 
-@main.command()
+@main.command(name="research")
 @click.option("-q", "--query", help="Query text to research.")
 @click.argument("query_arg", required=False)
 def research(query, query_arg):
     """Run research on a given query."""
+    run_research(query, query_arg)
+
+@main.command(name="list")
+def list_sessions():
+    """List all research sessions."""
+    workspace_dir = Path("workspace")
+    if not workspace_dir.exists():
+        console.print("[dim]No sessions found.[/dim]")
+        return
+    
+    sessions = sorted([d.name for d in workspace_dir.iterdir() if d.is_dir()], reverse=True)
+    if not sessions:
+        console.print("[dim]No sessions found.[/dim]")
+        return
+
+    table = Table(box=None, expand=False)
+    table.add_column("Session ID", style="accent")
+    for session in sessions:
+        table.add_row(session)
+    console.print(table)
+
+@main.command(name="resume")
+@click.argument("session_id")
+def resume(session_id):
+    """Resume a research session."""
+    workspace_path = Path("workspace") / session_id
+    if not workspace_path.exists():
+        console.print(f"[fail]Error: Session {session_id} not found.[/fail]")
+        return
+    
+    console.print(f"[accent]Resuming session:[/accent] [white]{session_id}[/white]")
+    
+    # Reload workspace info
+    meta_path = workspace_path / "meta.json"
+    if meta_path.exists():
+        import json
+        with open(meta_path, "r", encoding="utf-8") as f:
+            meta = json.load(f)
+        console.print(f"[secondary]Query:[/secondary] [white]{meta.get('query', 'Unknown')}[/white]")
+    
+    console.print(f"[secondary]Path:[/secondary] [white]{workspace_path.resolve()}[/white]")
+    
+    # Re-generate reports if they don't exist
+    report_path = workspace_path / "report.md"
+    if not report_path.exists():
+        console.print("[secondary]Re-generating reports...[/secondary]")
+        # We need a workspace_info dict similar to what create_workspace returns
+        workspace_info = {
+            "base": workspace_path,
+            "raw": workspace_path / "raw",
+            "logs": workspace_path / "logs",
+            "query": meta.get("query", "") if meta_path.exists() else session_id
+        }
+        generate_reports(workspace_info)
+        console.print("[success]Reports re-generated.[/success]")
+
+def run_research(query, query_arg):
     clean_query = (query or query_arg or "").strip()
     if not clean_query:
         console.print("[fail]Error: Query cannot be empty. Use -q 'query' or provide it as an argument.[/fail]")
@@ -49,9 +107,6 @@ def research(query, query_arg):
     
     # 1. Create workspace
     workspace = create_workspace(clean_query)
-    console.print("[secondary]Workspace[/secondary]")
-    console.print(f"[white]{workspace['base']}[/white]")
-    console.print()
     
     # 2. Execute collectors
     console.print("[secondary]Collecting Sources[/secondary]")
@@ -75,55 +130,32 @@ def research(query, query_arg):
     console.print()
 
     # 3. Save results
+    all_sources = {}
     for report in execution_reports:
         if report["status"] == "success":
+            # Save raw individual result
             file_path = workspace["raw"] / f"{report['collector']}.json"
             save_json(file_path, report["data"])
+            all_sources[report["collector"]] = report["data"]
+    
+    # Save sources.json in root
+    save_json(workspace["base"] / "sources.json", all_sources)
+    
+    # Save meta.json in root
+    meta = {
+        "query": clean_query,
+        "timestamp": workspace["timestamp"],
+        "session_id": workspace["name"],
+        "version": "0.1.2"
+    }
+    save_json(workspace["base"] / "meta.json", meta)
     
     # 4. Generate reports
     generate_reports(workspace)
     
-    # Results Table
-    console.print("[secondary]Results[/secondary]")
+    console.print("[success]Research complete.[/success]")
+    console.print(f"[secondary]Workspace saved at:[/secondary] [white]workspace/{workspace['name']}/[/white]")
     console.print()
-    table = Table(box=None, expand=False, show_header=False)
-    
-    succeeded = 0
-    failed = 0
-    
-    for report in execution_reports:
-        name = report['collector']
-        if report["status"] == "success":
-            succeeded += 1
-            data = report["data"]
-            if isinstance(data, dict) and "results" in data:
-                count = len(data["results"])
-            elif isinstance(data, list):
-                count = len(data)
-            else:
-                count = 0
-            table.add_row(f"[white]{name}[/white]", "[accent]success[/accent]", f"[secondary]{count}[/secondary]")
-        else:
-            failed += 1
-            table.add_row(f"[white]{name}[/white]", "[fail]failed[/fail]", "")
-            
-    console.print(table)
-    console.print()
-    
-    # Summary
-    console.print("[secondary]Summary[/secondary]")
-    console.print()
-    console.print(f"[secondary]Sources[/secondary]             [white]{total_collectors}[/white]")
-    console.print(f"[secondary]Succeeded[/secondary]           [white]{succeeded}[/white]")
-    console.print(f"[secondary]Failed[/secondary]              [fail]{failed}[/fail]")
-    console.print()
-    
-    absolute_path = workspace['base'].resolve()
-    console.print(f"[secondary]Session ID[/secondary]          [white]{workspace['name']}[/white]")
-    console.print(f"[secondary]Path[/secondary]                [white]{absolute_path}[/white]")
-    console.print()
-
-    console.print(f"[accent]Workspace ready:[/accent] [white]{absolute_path}[/white]")
 
 
 if __name__ == "__main__":

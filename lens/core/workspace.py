@@ -5,9 +5,8 @@ from pathlib import Path
 
 def create_workspace(query: str) -> dict:
     # Clean query for folder name
-    safe_query = "".join([c if c.isalnum() else "_" for c in query]).strip("_")
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    workspace_name = f"{safe_query}_{timestamp}"
+    workspace_name = f"session_{timestamp}"
     
     base_dir = Path("workspace") / workspace_name
     raw_dir = base_dir / "raw"

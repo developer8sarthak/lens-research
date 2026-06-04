@@ -11,8 +11,7 @@ def generate_reports(workspace_info: dict):
     Orchestrates the report generation process.
     """
     raw_dir = Path(workspace_info["raw"])
-    reports_dir = Path(workspace_info["base"]) / "reports"
-    reports_dir.mkdir(parents=True, exist_ok=True)
+    base_dir = Path(workspace_info["base"])
     
     all_normalized_data = []
     
@@ -46,10 +45,10 @@ def generate_reports(workspace_info: dict):
         "report.html": export_html(report_content)
     }
     
-    # 4. Save files
+    # 4. Save files in base directory
     saved_paths = []
     for filename, content in outputs.items():
-        save_path = reports_dir / filename
+        save_path = base_dir / filename
         with open(save_path, "w", encoding="utf-8") as f:
             f.write(content)
         saved_paths.append(save_path)
